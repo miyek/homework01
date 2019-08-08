@@ -5,7 +5,7 @@ import Input from '../Input/Input';
 const SearchBar = ({ className, onSearch }) => {
   const handleChange = (text) => {
     if( text.length > 2 ) {
-      console.log(text);
+      onSearch(text);
     }
   };
   return (

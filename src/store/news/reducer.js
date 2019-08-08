@@ -1,9 +1,13 @@
 import { NEWS } from './actionTypes';
 
 const INITIAL_STATE = {
-  data: [],
+  data: {
+    articles: [],
+    totalResults: 0,
+    status: null,
+  },
   hasError: false,
-  isLoading: true,
+  isLoading: false,
 };
 
 export function news(state = INITIAL_STATE, action) {
@@ -21,7 +25,9 @@ export function news(state = INITIAL_STATE, action) {
     case NEWS.success:
       return {
         ...state,
-        data: action.data
+        data: action.data,
+        hasError: false,
+        isLoading: false
       };
     default:
       return state;

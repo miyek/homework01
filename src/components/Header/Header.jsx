@@ -16,17 +16,21 @@ const Header = ({className, children}) => {
 
 export default withTheme(styled(Header)`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  height: 80px;
   background-color: ${props => props.theme.colors.gray};
   border-bottom: solid 10px ${props => props.theme.colors.lightGray};
   
-  &__logo {
-    width: 20%;
-  }
-  
-  &__children {
-    width: 60%
+  @media (min-width: ${props => props.theme.sizes.small}) {
+    flex-direction: row;
+    height: 80px;
+    
+    &__logo {
+      width: 20%;
+    }
+    
+    &__children {
+      width: 60%
+    }
   }
 `);

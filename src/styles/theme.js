@@ -5,6 +5,7 @@ export const defaultTheme = {
     lightenGray: '#eaeaea',
   },
   sizes: {
+    small: '576px',
     large: '980px'
   }
 };

@@ -5,7 +5,7 @@ const LoaderWrapper = ({ isLoading, hasError, children }) => {
   const loading = <div>Content is loading</div>;
   const error = <div>Error with loading data</div>;
 
-  let content = loading;
+  let content = '';
 
   if (isLoading && !hasError) {
     content = loading;

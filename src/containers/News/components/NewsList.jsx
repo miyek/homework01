@@ -4,7 +4,7 @@ import NewsListItem from './NewsListItem';
 
 export const NewsList = ({news}) => {
   const newsList = news.map((item, index) =>
-    (<NewsListItem key={index} item={item} id={index}/>));
+    (<NewsListItem key={index} item={item}/>));
   return (<section>{newsList}</section>);
 };
 

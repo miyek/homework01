@@ -5,5 +5,6 @@ import LayoutWrapper from './LayoutWrapper/LayoutWrapper';
 import Header from './Header/Header';
 import SearchBar from './SearchBar/SearchBar';
 import ArticleItemShort from './ArticleItemShort/ArticleItemShort';
+import BackButton from './BackButton/BackButton';
 
-export { NotFoundPage, Input, LoaderWrapper, LayoutWrapper, Header, ArticleItemShort, SearchBar };
+export { NotFoundPage, Input, LoaderWrapper, LayoutWrapper, Header, ArticleItemShort, SearchBar, BackButton };

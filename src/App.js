@@ -8,7 +8,6 @@ import { News, Article } from './containers';
 import { ROUTES } from './shared';
 import { history } from './utils';
 
-// todo: add RWD
 function App(props) {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -19,7 +18,7 @@ function App(props) {
             <LayoutWrapper>
               <Switch>
                 <Route exact path={ROUTES.NEWS} component={News}/>
-                <Route exact path={ROUTES.ARTICLE_ID} render={(loc) => <Article id={loc.match.params.id}/>}/>
+                <Route exact path={ROUTES.ARTICLE} component={Article}/>}/>
                 <Route patch="*" component={NotFoundPage}/>
               </Switch>
             </LayoutWrapper>
