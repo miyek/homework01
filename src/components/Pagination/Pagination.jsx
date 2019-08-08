@@ -3,6 +3,16 @@ import styled from 'styled-components';
 
 import { calculatePageNumber } from './pagination.util';
 
+/**
+ * Component generate pagination list base on current page, total pages and itemPerPage
+ * @param className
+ * @param currentPage
+ * @param total
+ * @param itemPerPage
+ * @param handlePageChange
+ * @returns {*}
+ * @constructor
+ */
 const Pagination = ({className, currentPage = 1, total = 1, itemPerPage = 20, handlePageChange}) => {
   const pages = calculatePageNumber(total, itemPerPage);
   let pagesCards = [];
